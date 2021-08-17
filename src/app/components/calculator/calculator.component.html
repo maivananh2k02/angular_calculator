@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="input-group col-12">
+    <input [(ngModel)]="input" type="text">
+    <div class="col-12" [(ngModel)]="result">{{result}}</div>
+  </div>
+  <div class="input-group col-12">
+    <button (click)="clickCell('(')" class="btn col-3">(</button>
+    <button (click)="clickCell(')')" class="btn col-3">)</button>
+    <button (click)="clickCell('')" class="btn col-3">DEL</button>
+    <button (click)="clickCell('')" class="btn col-3">AC</button>
+  </div>
+  <div class="input-group col-12">
+    <button (click)="clickCell('7')" class="btn col-3">7</button>
+    <button (click)="clickCell('8')" class="btn col-3">8</button>
+    <button (click)="clickCell('9')" class="btn col-3">9</button>
+    <button (click)="clickCell('+')" class="btn col-3">+</button>
+  </div>
+  <div class="input-group col-12">
+    <button (click)="clickCell('4')" class="btn col-3">4</button>
+    <button (click)="clickCell('5')" class="btn col-3">5</button>
+    <button (click)="clickCell('6')" class="btn col-3">6</button>
+    <button (click)="clickCell('-')" class="btn col-3">-</button>
+  </div>
+  <div class="input-group col-12">
+    <button (click)="clickCell('1')" class="btn col-3">1</button>
+    <button (click)="clickCell('2')" class="btn col-3">2</button>
+    <button (click)="clickCell('3')" class="btn col-3">3</button>
+    <button (click)="clickCell('*')" class="btn col-3">x</button>
+  </div>
+  <div class="input-group col-12">
+    <button (click)="clickCell('0')" class="btn col-3">0</button>
+    <button (click)="clickCell('.')" class="btn col-3">.</button>
+    <button class="btn col-3" (click)="getResult()">=</button>
+    <button (click)="clickCell('/')" class="btn col-3">/</button>
+  </div>
+</div>
